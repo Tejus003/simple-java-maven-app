@@ -4,7 +4,7 @@ EXPOSE 8081
  
 ENV APP_HOME /usr/src/app
 
-COPY /var/jenkins/workspace/pipeline_jar/target/my-app-1.0-SNAPSHOT.jar  $APP_HOME/app.jar
+COPY /target/my-app-1.0-SNAPSHOT.jar  $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
